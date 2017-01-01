@@ -20,6 +20,7 @@ namespace AspNetStoreProcedure.Models
         }
 
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

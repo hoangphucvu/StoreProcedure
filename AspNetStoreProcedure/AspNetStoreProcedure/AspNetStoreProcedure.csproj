@@ -156,6 +156,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -168,10 +169,17 @@
     <Compile Include="Migrations\201701010938205_MyMovieSP.Designer.cs">
       <DependentUpon>201701010938205_MyMovieSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701010954102_MyMigration.cs" />
+    <Compile Include="Migrations\201701010954102_MyMigration.Designer.cs">
+      <DependentUpon>201701010954102_MyMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\StoreProcedureContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\EmployeeRepository.cs" />
+    <Compile Include="Repository\IEmployeeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -213,6 +221,9 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Movies\Edit.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\AddEmployee.cshtml" />
+    <Content Include="Views\Employee\EditEmpDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -231,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701010938205_MyMovieSP.resx">
       <DependentUpon>201701010938205_MyMovieSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701010954102_MyMigration.resx">
+      <DependentUpon>201701010954102_MyMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
